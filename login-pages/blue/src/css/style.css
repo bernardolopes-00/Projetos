@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font: "Poppins", sans-serif;
+    --white: #FFF;
+    --blue: #2563EB;
+    --gray: #52525B;
+    --gray-light: #CBD5E1;
+    --black: #090914;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+button,
+input,
+label {
+    cursor: pointer;
+}
+
+body {
+    font-family: var(--font);
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+    background: url("/src/img/banner.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100svh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding-left: 25px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.h1-banner {
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 600;
+    max-width: 600px;
+    line-height: 4.6rem;
+}
+
+.p-banner {
+    color: var(--gray-light);
+    font-size: 20px;
+}
+
+.stars {
+    max-width: 165px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 600px;
+}
+
+.h1-msg-login {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.p-msg-login {
+    color: var(--gray);
+    font-size: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 25px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.input {
+    border: 2px solid var(--gray-light);
+    height: 52px;
+    border-radius: 15px;
+    padding-left: 25px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.input:hover {
+    border-color: var(--blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.esq {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 3.5rem;
+}
+
+.esq a {
+    color: var(--blue);
+    font-size: 18px;
+}
+
+.esq a:hover {
+    text-decoration: underline;
+}
+
+.btn-form {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 18px;
+    font-family: var(--font);
+    width: 170px;
+    height: 55px;
+    border-radius: 15px;
+    transition: all .4s ease-in-out;
+    margin-bottom: 25px;
+}
+
+.btn-form:hover {
+    transition: all .4s ease-in-out;
+    width: 200px;
+}
+
+.not-acount {
+    color: var(--gray);
+    font-size: 18px;
+}
+
+.not-acount:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width:1000px) and (max-width: 1331px) {
+
+    .banner {
+        width:50vw;
+    }
+
+    .h1-banner {
+        font-size: 3rem;
+    }
+
+    .h1-msg-login {
+        font-size: 2.8rem;
+    }
+
+    .login {
+        display: flex;
+        justify-content: center;
+        height: 100svh;
+        margin: 0 auto;
+    }
+
+    .form {
+        padding-top: 3rem;      
+    }
+}
+
+@media screen and (max-widtH: 999px) {
+    .banner {
+        display: none;
+    }
+
+    .login {
+        display: flex;
+        justify-content: center;
+        height: 100svh;
+        margin: 0 auto;
+    }
+
+    .h1-msg-login {
+        font-size: 2.5rem;
+    }
+
+    .esq a {
+        margin: 0 auto;
+    }
+
+    .form {
+        padding-top: 3rem;      
+    }
+
+    .btn-form {
+        width: 100%;
+    }
+
+    .btn-form:hover {
+        width: 100%;
+        height: 65px;
+    }
+
+    .h1-msg-login {
+        font-size: 2rem;
+    }
+
+    .not-acount {
+        text-align: center;
+    }
+}

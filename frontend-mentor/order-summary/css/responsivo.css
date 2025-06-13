@@ -1,0 +1,13 @@
+@media screen and (max-width: 430px) {
+    .card-content {
+        padding: 2rem;
+    }
+
+    .plan-content p {
+        font-size: 0.8rem;
+    }
+
+    .a-change {
+        font-size: 1rem;
+    }
+}

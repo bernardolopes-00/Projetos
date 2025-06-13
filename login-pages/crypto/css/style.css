@@ -1,0 +1,103 @@
+/*Imports*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Variaveis*/
+:root {
+    --font: "Poppins", serif;
+    --border-color: rgba(255, 255, 255, 0.257);
+    --white: #fff;
+    --black: #000;
+}
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+/*Body*/
+body {
+    background: url(/img/img-login-crypto.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+}
+
+/*Main - Conteudo Principal*/
+main {
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 50px;
+    margin: 15px;
+}
+
+/*Formulario*/
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+/*Titulo do Form*/
+.title-form {
+    color: var(--white);
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+/*Inputs*/
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5rem;
+    row-gap: 2rem;
+}
+
+.box-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 0.7rem 1rem;
+}
+
+.box-input input {
+    background-color: transparent;
+    color: var(--white);
+    font-size: 17px;
+    width: 90%;
+}
+
+.box-input input::placeholder {
+    color: var(--white);
+}
+
+.label-input {
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+.btn-form {
+    color: var(--black);
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 400;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}

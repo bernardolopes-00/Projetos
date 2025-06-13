@@ -1,0 +1,138 @@
+.bg-top img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.card {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    margin: 0 1.5rem;
+}
+
+.card-img img {
+    max-width: 450px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-content {
+    padding: 2.5rem 3rem 3rem;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.card-text h1 {
+    color: var(--dark-blue);
+    font-size: 1.7rem;
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+
+.card-text p {
+    color: var(--gray);
+    font-size: 1.1rem;
+}
+
+.plan {
+    background-color: var(--light-gray);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.plan-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.type-plan {
+    color: var(--dark-blue);
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.price-plan {
+    color: var(--gray);
+    font-size: 1.1rem;
+}
+
+.a-change {
+    color: var(--normal-blue);
+    font-size: 1.1rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.a-change::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--normal-blue);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.a-change:hover::after {
+    width: 100%;
+}
+
+.btns-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btns-card button {
+    background-color: var(--normal-blue);
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 20px 7px #3829e04b;
+}
+
+.btns-card button:hover {
+    background-color: var(--dark-blue);
+}
+
+.btns-card a {
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 800;
+    transition: all 0.4s ease-in-out;
+}
+
+.btns-card a:hover {
+    opacity: 0.5;
+}

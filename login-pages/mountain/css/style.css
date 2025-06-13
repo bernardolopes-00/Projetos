@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+    --font: "Poppins", sans-serif;
+    --main-color: #EFEFEF;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+body {
+    background-image: url(/img/login-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--main-color);
+    height: 100vh;
+    width: 100%;
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.024);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0px 5px 0px #0000003e;
+    border-radius: 10px;
+    max-width:350px;
+    width: 100%;
+    padding: 2.2rem 2.15rem;
+}
+
+.title-form {
+    font-size: 2.2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.box-input-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    border-radius: 35px;
+    padding: 0.8rem 1.5rem;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.input-1 {
+    background-color: transparent;
+    font-family: var(--font);
+    color: var(--main-color);
+    font-size: 16px;
+    width: 100%;
+}
+
+.input-1::placeholder {
+    color: var(--main-color);
+} 
+
+.icon {
+    font-size: 20px;
+}
+
+.box-input-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.label-2 {
+    font-size: 16px;
+}
+
+.a-input {
+    color: var(--main-color);
+    font-size: 16px;
+}
+
+.a-input:hover {
+    text-decoration: underline;
+}
+
+.btn-form {
+    background-color: var(--main-color);
+    color: var(--black);
+    font-size: 18px;
+    font-family: var(--font);
+    width: 100%;
+    height: 55px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.btn-form:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.not-conta {
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:360px) {
+    .box-input-2 {
+        flex-direction: column;
+    }
+
+    .not-conta {
+        font-size: 90%;
+    }
+}
