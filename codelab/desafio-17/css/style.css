@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap'); /*Font*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"); /*Icons*/
+
+:root {
+    --font-playfair: "Playfair", serif;
+    --font-outfit: "Outfit", sans-serif;
+
+    --black: #2C2C2C;
+    --main-color: #996830;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    font-family: var(--font-playfair);
+}
+
+h2, p, a {
+    font-family: var(--font-outfit);
+}
+
+body {
+    color: var(--black);
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    margin: auto;
+    max-width: 1250px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--black);
+    font-size: 1.1rem;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.contato-bnt {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.7rem 2rem;
+    border-radius: 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+.contato-bnt:hover {
+    background-color: #2C2C2C;
+}
